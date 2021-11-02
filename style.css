@@ -189,23 +189,12 @@ nav{
 
 .figure-container{
 
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-right: 10%;
-    padding-left: 10%;
-
-}
-
-.figure-container figure{
-
-    margin-bottom: 50px;
-    filter: drop-shadow(0 10px 15px #0000002d);
-    padding-right: 5%;
-    padding-left: 5%;
-
 }
 
 .figure-container figure img{
@@ -214,39 +203,50 @@ nav{
 
 }
 
-.shop{
+.figure-container figure{
+
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+.baker-choice{
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+
     border-radius: 30px;
     border: solid #EE2E31 2px;
-    margin: 5%;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+
     background-color: #fdf4ed;
-    filter: drop-shadow(0 10px 15px #0000002d);
+    filter: drop-shadow(0 5px 10px #0000002d);
 }
 
-.shop h4{
+.baker-choice h4{
 
     color: #fdf4ed;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.4em;
     margin-top: 3%;
 
 }
 
-.shop h5{
+.baker-choice h5{
 
     color: #fdf4ed;;
     font-weight: 500;
     text-align: center;
     font-size: 1.4em;
-    margin-top: 1%;
-    margin-bottom: 15%;
 
 }
 
-.shop figcaption{
+figcaption{
 
     text-align: center;
     font-size: 1.3em;
@@ -257,13 +257,13 @@ nav{
 
 }
 
-.shop figcaption .price{
+figcaption p{
 
-    font-weight: 700;
+    font-weight: 600;
 
 }
 
-.shop figcaption .add-cart{
+figcaption .add-cart{
 
     color: #fff7f7;
     background-color: #EE2E31;
@@ -271,11 +271,11 @@ nav{
     border-radius: 20px;
     font-size: 0.8em;
     transition: 0.3s;
-    cursor:pointer
+    cursor:pointer;
 
 }
 
-.shop figcaption .add-cart:hover{
+figcaption .add-cart:hover{
 
     color: #fff7f7;
     background-color:  #070707;
@@ -321,17 +321,20 @@ nav{
 
 }
 
-.shop a{
+.baker-choice a{
 
     font-weight: 500;
     text-align: center;
     font-size: 1.4em;
+
     margin-top: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
+
     padding-bottom: 0.5%;
     padding-top: 0.5%;
     padding-right: 1%;
     padding-left: 1%;
+
     text-decoration: none;
     color: #EE2E31;
     background-color: #fdf4ed;
@@ -341,18 +344,10 @@ nav{
 
 }
 
-.shop a:hover{
+.baker-choice a:hover{
 
     color: #fdf4ed;
     background-color: #EE2E31;
-
-}
-
-.shop p{
-
-    font-weight: 600;
-    font-size: 1.2em;
-    margin-bottom: 1%;
 
 }
 
@@ -361,7 +356,75 @@ nav{
     background-color: #EE2E31;
     border-radius: 27px 27px 0px 0px;
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     margin-bottom: 5%;
+
+}
+
+.main{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 5%;
+
+    background-color: #FCD9DA;
+}
+
+.about{
+
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+p{
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    font-size: 1em;
+    font-weight: 600;
+
+}
+
+h6{
+
+    color: #EE2E31;
+    margin-bottom: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3em;
+
+}
+
+.about a{
+
+    font-weight: 500;
+    text-align: center;
+    font-size: 1em;
+
+    margin-right: 10%;
+    margin-left: 10%;
+
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-right: 1%;
+    padding-left: 1%;
+
+    text-decoration: none;
+    color: #FCD9DA;
+    background-color: #EE2E31;
+    border: solid #EE2E31 2px;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+.about a:hover{
+
+    color: #EE2E31;
+    background-color: #FCD9DA;
+    border: solid #EE2E31 2px;
 
 }
