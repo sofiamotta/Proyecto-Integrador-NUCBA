@@ -1,0 +1,98 @@
+/*NAV*/
+
+nav .nav-bar a{
+
+    color: #06070C;
+
+}
+
+.nav-bar .register {
+
+    background-color: #EE2E31;
+    color: #FCD9DA;
+
+}
+
+.nav-bar .register:hover{
+
+    background-color: #FCD9DA;
+    color: #EE2E31;
+
+}
+
+.nav-bar .cart-circle {
+
+    color: #FCD9DA;
+    background-color: #080b12a1;
+
+}
+
+.nav-bar .login:hover {
+
+    color: #06070C;
+
+}
+
+/*NAV*/
+
+/*ABOUT*/
+
+.about-us-div{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.about-us-div .text-div{
+
+    text-align: center;
+    width: 50%;
+    margin-bottom: 2%;
+
+}
+
+.text-div img{
+
+    filter: drop-shadow( 0 0px 10px rgba(0, 0, 0, 0.123));
+
+}
+
+.about-us-div .text-div h1{
+
+    margin-bottom: 2%;
+
+}
+
+.about-us-div .img-div{
+
+    position: relative;
+
+}
+
+.about-us-div .img-div .img2{
+
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    width: 20%;
+    transform: rotate(-20deg);
+
+}
+
+.about-us-div .img-div .img3{
+
+    position: absolute;
+    bottom: -5%;
+    right: -10%;
+    width: 20%;
+    transform: rotate(-20deg);
+
+}
+
+
+/*NAV FIN*/
