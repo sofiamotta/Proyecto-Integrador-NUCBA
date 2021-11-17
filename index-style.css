@@ -490,3 +490,199 @@ h6 {
 }
 
 /*CONTACT FORM FIN*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 320px){
+
+    .cover {
+
+        background-image: url(./IMG/fondo1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+        height: 300px;
+    
+    }
+
+    /*MAIN PAGE*/
+
+.main-page {
+
+    margin-top: 10%;
+
+}
+
+.main-page h1 {
+
+    font-size: 2em;
+    line-height: 35px;
+
+}
+
+.main-page h2 {
+
+    font-size: 0.9em;
+
+}
+
+/*MAIN PAGE FIN*/
+
+
+/*WHY CHOOSE MERENDA*/
+
+.figures {
+    
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.fc-bottom h3 {
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+
+.figures img{
+
+    width: 75px;
+
+}
+
+/*WHY CHOOSE MERENDA FIN*/
+
+
+/*ABOUT*/
+
+.about{
+
+    display: none;
+
+}
+
+/*ABOUT FIN*/
+
+
+/*POPULAR*/
+
+.popular {
+
+    flex-direction: column;
+    padding-bottom: 2%;
+
+}
+
+.popular h7{
+
+    margin-top: 30px;
+    font-size: 2em;
+
+}
+
+.popular p{
+
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.popular .popular-figures{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0%;
+    margin: 0px;
+
+}
+
+.popular-figures figure {
+
+    margin-top: 30px;
+
+}
+
+.popular figcaption p{
+
+    font-weight: 800;
+    font-size: 1em;
+    margin: 5px;
+
+}
+
+.buttons{
+
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.popular .buttons a{
+
+    border: 3px solid #EE2E31;
+    margin: 5px;
+
+
+}
+
+/*POPULAR FIN*/
+
+
+/*CONTACT FORM*/
+
+.contact{
+
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.contact h8{
+
+    margin-top: 2%;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+
+}
+
+.contact p{
+
+display: none;
+
+}
+
+.contact form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.contact .input{
+
+    width: 200px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.contact .btn-submit{
+
+    width: 150px;
+
+}
+
+/*CONTACT FORM FIN*/
+
+
+}

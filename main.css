@@ -27,6 +27,25 @@ nav {
 
 /*NAV BAR*/
 
+#chk{
+
+    display: none;
+
+}
+
+.down{
+
+    display: none;
+
+}
+
+#down{
+
+    display: none;
+
+}
+
+
 .nav-bar {
 
     display: flex;
@@ -91,6 +110,15 @@ nav {
     height: auto;
     margin-right: auto;
     margin-top: 0.5%;
+
+}
+
+.nav-bar .signup{
+
+    display: none;
+    font-weight: 500;
+    color: #EE2E31;
+
 
 }
 
@@ -189,7 +217,7 @@ footer .icons {
 
 }
 
-footer .icons a{
+footer .icons a {
 
     font-size: 2em;
     text-decoration: none;
@@ -199,36 +227,36 @@ footer .icons a{
 }
 
 
-footer .icons i{
+footer .icons i {
 
     transition: 0.4s;
 
 }
 
 
-footer .icons i:hover{
+footer .icons i:hover {
 
     color: #EE2E31;
-    transform: scale(1.5,1.5);
+    transform: scale(1.5, 1.5);
 
 }
 
-footer .footer-bottom{
+footer .footer-bottom {
 
     width: 100%;
     height: 5vh;
     position: absolute;
     bottom: 0px;
-    
+
     display: flex;
     justify-content: flex-end;
 
-    color:#FCD9DA;
+    color: #FCD9DA;
     border-top: 2px solid #fcd9da41;
 
 }
 
-footer .data{
+footer .data {
 
     width: 100%;
     display: flex;
@@ -237,14 +265,14 @@ footer .data{
 
 }
 
-footer .data i{
+footer .data i {
 
     margin-left: 1.5%;
     font-size: 1.5em;
 
 }
 
-footer .data a{
+footer .data a {
 
     margin-left: 1.5%;
     text-decoration: none;
@@ -253,13 +281,14 @@ footer .data a{
 
 }
 
-footer .data a:hover, .data i:hover{
+footer .data a:hover,
+.data i:hover {
 
     color: #fcd9dab9;
 
 }
 
-footer .text{
+footer .text {
 
     width: 100%;
     display: flex;
@@ -269,16 +298,16 @@ footer .text{
     align-items: center;
     font-size: 0.9em;
     list-style: none;
-    
+
 }
 
-footer span{
+footer span {
 
     font-weight: 800;
 
 }
 
-footer .nav-footer{
+footer .nav-footer {
 
     width: 25%;
     display: flex;
@@ -287,20 +316,20 @@ footer .nav-footer{
 
 }
 
-footer .nav-footer a{
+footer .nav-footer a {
     color: #FCD9DA;
     text-decoration: none;
     transition: 0.5s;
 }
 
-footer .nav-footer a:hover{
+footer .nav-footer a:hover {
 
     color: #EE2E31;
 
 }
 
 
-footer .logo{
+footer .logo {
 
     display: flex;
     flex-direction: column;
@@ -310,23 +339,313 @@ footer .logo{
 
 }
 
-footer .logo img{
+footer .logo img {
 
     margin-bottom: 10%;
 
 }
 
-footer .logo p, a{
+footer .logo p,
+a {
 
     color: #FCD9DA;
     text-decoration: none;
 
 }
 
-footer .logo a:hover{
+footer .logo a:hover {
 
     color: #dab4b5;
 
 }
 
 /*FOOTER FIN*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 320px) {
+
+    body {
+
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-color: #fdf4ed;
+        position: relative;
+
+    }
+
+   nav{
+
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: 0.4s;
+
+    }
+
+    nav .nav-bar{
+
+        display: none;
+
+    }
+
+    nav .nav-bar-logo{
+
+        display: none;
+
+    }
+
+    header{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .drop label{
+
+        width: 320px;
+        display: block;
+        text-align: center;
+
+    }
+
+    header label i{
+
+        color: #FCD9DA;
+
+    }
+
+    header #chk{
+
+        display: none;
+
+    }
+
+    header .drop{
+
+        display: flex;
+    
+    }
+
+    header #chk:checked ~ nav {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        opacity: 100;
+
+        background-color:#FCD9DA;
+
+    }
+
+    header #chk:checked ~ nav .down{
+
+        display: flex;
+        justify-content: right;
+        position: absolute;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        width: 100%;
+        background-color: #EE2E31;
+
+    }
+
+    header #chk:checked ~ nav .down label i{ 
+
+        margin-right: 20px;
+
+    }
+
+    header #chk:checked ~ .drop{
+        
+        display: none;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar{
+
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar-logo{
+
+        display: none;
+
+    }
+
+    header #chk:checked ~ .down{
+
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        z-index: 30;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar li{
+
+        margin: 0px;
+        margin-bottom: 10px;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar a{
+
+        color: #06070C;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .login{
+
+        color: #EE2E31;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .signup{
+
+        display: flex;
+        color: #EE2E31;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .register{
+
+        display: none;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .cart-div{
+
+        display: flex;
+        margin: 0px;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .cart-div .cart-circle{
+
+        display: none;
+
+    }
+
+    header #chk:checked ~ nav .nav-bar .cart-div .cart i{
+
+        color: #FCD9DA;
+
+    }
+
+    
+
+
+
+    /*NAV BAR FIN*/
+
+    footer {
+
+        height: 320px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer .icons {
+
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 50px;
+
+    }
+
+    footer .icons a {
+
+        font-size: 1.4em;
+
+    }
+
+    footer .footer-bottom {
+
+        height: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer .data {
+
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer .data i {
+
+        font-size: 1em;
+
+    }
+
+    footer .data a {
+
+        font-size: 0.7em;
+
+    }
+
+    footer .text {
+
+        justify-content: center;
+        font-size: 0.5em;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 5px;
+
+    }
+
+    footer .nav-footer {
+
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        white-space: nowrap;
+        margin-bottom: 20px;
+
+    }
+
+    footer .logo img {
+
+        margin-bottom: 20px;
+
+    }
+
+    footer .logo p,
+    .logo a {
+
+        display: none;
+
+    }
+
+}
