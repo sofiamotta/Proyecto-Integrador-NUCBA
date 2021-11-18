@@ -1,6 +1,6 @@
 /*NAV*/
 
-nav .nav-bar a{
+nav .nav-bar a {
 
     color: #06070C;
 
@@ -13,7 +13,7 @@ nav .nav-bar a{
 
 }
 
-.nav-bar .register:hover{
+.nav-bar .register:hover {
 
     background-color: #FCD9DA;
     color: #EE2E31;
@@ -57,7 +57,7 @@ nav .nav-bar a{
 
 }
 
-.menu{
+.menu {
 
     width: 100%;
     display: flex;
@@ -66,7 +66,7 @@ nav .nav-bar a{
 
 }
 
-.menu .title{
+.menu .title {
 
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@ nav .nav-bar a{
 
 }
 
-.menu figure{
+.menu figure {
 
     display: flex;
     width: 20%;
@@ -165,7 +165,7 @@ nav .nav-bar a{
 
 }
 
-.fig-container figure img{
+.fig-container figure img {
 
     width: 50%;
     filter: drop-shadow(0px 15px 10px #080b121e);
@@ -184,7 +184,7 @@ nav .nav-bar a{
 
 /*CONTACT FORM*/
 
-.contact{
+.contact {
 
     width: 100%;
     background-color: #FCD9DA;
@@ -198,7 +198,7 @@ nav .nav-bar a{
 
 }
 
-.contact h2{
+.contact h2 {
 
     margin-top: 2%;
     font-size: 2.3em;
@@ -208,7 +208,7 @@ nav .nav-bar a{
 
 }
 
-.contact p{
+.contact p {
 
     font-size: 1.3em;
     color: #080b12;
@@ -218,7 +218,7 @@ nav .nav-bar a{
 
 }
 
-.contact form{
+.contact form {
 
     display: flex;
     flex-direction: column;
@@ -228,7 +228,7 @@ nav .nav-bar a{
 
 }
 
-.contact .input{
+.contact .input {
 
     width: 25%;
     font-weight: 700;
@@ -246,19 +246,19 @@ nav .nav-bar a{
     resize: none;
 }
 
-.contact .input:last-of-type{
+.contact .input:last-of-type {
 
     font-weight: 500;
 
 }
 
-.contact .input::placeholder{
+.contact .input::placeholder {
 
     color: #EE2E31;
 
 }
 
-.contact .btn-submit{
+.contact .btn-submit {
 
     width: 10%;
     font-weight: 700;
@@ -277,208 +277,282 @@ nav .nav-bar a{
 
 }
 
-.contact .input:hover{
+.contact .input:hover {
 
-    background-color:#ffc4c8;
+    background-color: #ffc4c8;
 
 }
 
-.contact .input:focus{
+.contact .input:focus {
 
     background-color: #FCD9DA;
 
 }
 
-.contact .btn-submit:hover{
+.contact .btn-submit:hover {
 
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     background-color: #EE2E31;
     filter: drop-shadow(0 0 15px #ee2e3171);
 
 }
 
-.contact .input:focus{
+.contact .input:focus {
 
     border: 4px solid #EE2E31;
 
 }
 
-
 /*CONTACT FORM FIN*/
 
-/*FOOTER*/
+/*MEDIA QUERIES*/
 
-footer {
+@media only screen and (max-width: 600px) and (min-width: 0px) {
 
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #06070C;
+    /*DROP*/
 
-}
+    .drop label i {
 
-.footer-top {
+        color: #06070C;
+        font-size: 1.7em;
 
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    }
 
-}
+    /*DROP FIN*/
 
-.footer-top .icons {
+    /*MENU*/
 
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 6%;
+    .menu-div {
 
-}
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
 
-.footer-top .icons a {
+    }
 
-    font-size: 2em;
-    text-decoration: none;
-    color: #FCD9DA;
-    transition: ease-in;
+    .menu-div .menu {
 
-}
+        margin: 0px;
+        padding: 0px;
 
+    }
 
-.footer-top .icons i {
+    .menu .title {
 
-    transition: 0.4s;
+        margin: 0px;
+    }
 
-}
+    .menu-div .menu .fig-container {
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding: 0px;
 
-.footer-top .icons i:hover {
+    }
 
-    color: #EE2E31;
-    transform: scale(1.5, 1.5);
+    .menu figure {
 
-}
+        width: 80vw;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
 
-footer .footer-bottom {
+    }
 
-    width: 100%;
-    height: 5vh;
+    /*MENU FIN*/
 
-    padding-bottom: 0.2%;
-    padding-top: 0.2%;
+    /*CONTACT FORM*/
 
-    display: flex;
-    justify-content: flex-end;
+    .contact {
 
-    color: #FCD9DA;
-    border-top: 2px solid #fcd9da41;
-}
+        width: 100vw;
+        text-align: center;
 
-footer .data {
+    }
 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 4%;
+    .contact h2 {
 
-}
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        font-size: 2em;
 
-footer .data i {
+    }
 
-    margin-left: 1.5%;
-    font-size: 1.5em;
+    .contact p {
 
-}
+        margin-bottom: 5%;
 
-footer .data a {
+    }
 
-    margin-left: 1.5%;
-    text-decoration: none;
-    color: #FCD9DA;
+    .contact .input {
 
+        width: 80vw;
+    }
 
-}
+    .contact .btn-submit {
 
-footer .data a:hover,
-i:hover {
+        width: 50vw;
+        font-size: 1em;
+        margin-bottom: 5%;
+        margin-top: 5%;
 
-    color: #fcd9dab9;
+    }
+
+    /*CONTACT FORM FIN*/
 
 }
 
-footer .text {
+@media only screen and (max-width: 1023px) and (min-width: 601px) {
 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 5%;
-    align-items: center;
-    font-size: 0.9em;
-    list-style: none;
+    /*DROP*/
+
+    .drop label i {
+
+        color: #06070C;
+        font-size: 1.7em;
+
+    }
+
+    /*DROP FIN*/
+
+    /*MENU*/
+
+    .menu-div {
+
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .menu-div .menu {
+
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .menu .title {
+
+        margin: 0px;
+        margin-bottom: 10%;
+    }
+
+    .menu-div .menu .fig-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding: 0px;
+
+    }
+
+    .menu figure {
+
+        width: 50vw;
+        padding-bottom: 6%;
+        margin-bottom: 10%;
+
+    }
+
+    /*MENU FIN*/
+
+    /*CONTACT FORM*/
+
+    .contact {
+
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    .contact h2 {
+
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        font-size: 2em;
+
+    }
+
+    .contact p {
+
+        margin-bottom: 5%;
+
+    }
+
+    .contact .input {
+
+        width: 80vw;
+    }
+
+    .contact .btn-submit {
+
+        width: 50vw;
+        font-size: 1em;
+        margin-bottom: 5%;
+        margin-top: 5%;
+
+    }
+
+    /*CONTACT FORM FIN*/
 
 }
 
-footer span {
+@media only screen and (max-width: 2560px) and (min-width: 2000px){
 
-    font-weight: 800;
+    /*MENU*/
 
-}
+    .menu-div h1{
 
-.footer-top .nav-footer {
+        font-size: 4em;
 
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2em;
+    }
 
-}
+    .menu-div p{
 
-.footer-top .nav-footer a {
-    color: #FCD9DA;
-    text-decoration: none;
-    transition: 0.5s;
-}
+        font-size: 2em;
 
-.footer-top .nav-footer a:hover {
+    }
 
-    color: #EE2E31;
+    .fig-container figcaption{
 
-}
+        font-size: 1.4em;
 
+    }
 
-.footer-top .logo {
+    /*MENU FIN*/
 
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 5%;
-    margin-bottom: 2%;
+    /*CONTACT*/
 
-}
+    .contact h2{
 
-.footer-top .logo img {
+        font-size: 3em;
 
-    margin-bottom: 10%;
+    }
 
-}
+    .contact p{
 
-.footer-top .logo p,
-.logo a {
+        font-size: 1.8em;
 
-    color: #FCD9DA;
-    text-decoration: none;
+    }
 
-}
+    .contact form .input{
 
-.footer-top .logo a:hover {
+        font-size: 1.5em;
 
-    color: #dab4b5;
+    }
+
+    .contact .btn-submit {
+
+        font-size: 1.5em;
+        border-radius: 30px;
+
+    }
 
 }
-
-/*FOOTER FIN*/

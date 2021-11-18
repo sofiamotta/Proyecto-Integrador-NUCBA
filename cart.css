@@ -60,7 +60,7 @@ nav .nav-bar a {
 
 .table-container {
 
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: #080b12;
@@ -250,5 +250,233 @@ td .num-selector:focus {
     color: #EE2E31;
     font-size: 2em;
     margin-left: 5%;
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+
+    /*DROP*/
+
+    .drop label i{
+
+        color: #06070C;
+        font-size: 1.5em;
+
+    }
+
+    /*DROP FIN*/
+
+    /*MAIN*/
+
+    main {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*MAIN FIN*/
+
+    /*TABLE*/
+
+    .table-container {
+
+        margin-top: 20%;
+        margin-bottom: 30%;
+    
+    }
+    
+    table {
+    
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px
+    
+    }
+    
+    th {
+    
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.3em;
+        padding-right: 0%;
+    
+    }
+
+    thead tr th:first-of-type{
+
+        display: none;
+
+    }
+    
+    td {
+    
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.4em;
+    }
+
+    tr td:first-of-type{
+
+        display: none;
+
+    }
+    
+    tr td img {
+
+        display: none;
+    
+    }
+    
+    
+    td .num-selector {
+    
+        padding-left: 0%;
+    
+    }
+
+    /*TABLE FIN*/
+
+    /*CHECKOUT*/
+
+    .order-checkout img{
+
+        width: 50vw;
+        margin-top: 20%;
+
+    }
+
+    .order-checkout h1{
+
+        font-size: 1.5em;
+        margin-top: 5%;
+
+    }
+    
+    .order-checkout h2 {
+
+        font-size: 1.2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    }
+
+    /*CHECKOUT FIN*/
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 501px){
+
+    /*DROP*/
+
+    .drop label i{
+
+        color: #06070C;
+        font-size: 1.5em;
+
+    }
+
+    /*DROP FIN*/
+
+    /*MAIN*/
+
+    main {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*MAIN FIN*/
+
+    /*TABLE*/
+
+    .table-container {
+
+        margin-top: 10%;
+        margin-bottom: 20%;
+    
+    }
+    
+    th {
+    
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.3em;
+        padding-right: 0%;
+    
+    }
+    
+    td {
+    
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.5em;
+    }
+
+    
+    tr td img {
+
+        width: 10vw;
+    
+    }
+    td{
+
+        width: 5vw;
+
+    }
+
+    /*TABLE FIN*/
+
+    /*CHECKOUT*/
+
+    .order-checkout img{
+
+        width: 50vw;
+        margin-top: 20%;
+
+    }
+
+    .order-checkout h1{
+
+        font-size: 1.5em;
+        margin-top: 5%;
+
+    }
+    
+    .order-checkout h2 {
+
+        font-size: 1.2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    }
+
+    /*CHECKOUT FIN*/
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+
+
+    /*MAIN*/
+
+    main {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*MAIN FIN*/
 
 }

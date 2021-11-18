@@ -27,24 +27,11 @@ nav {
 
 /*NAV BAR*/
 
-#chk {
+#chk, .drop, .down {
 
     display: none;
 
 }
-
-.down {
-
-    display: none;
-
-}
-
-#down {
-
-    display: none;
-
-}
-
 
 .nav-bar {
 
@@ -363,14 +350,11 @@ footer .logo a:hover {
 
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 425px) and (min-width: 0px) {
+@media only screen and (max-width: 600px) and (min-width: 0px) {
 
     body {
 
         width: 100%;
-        margin: 0%;
-        padding: 0%;
-        background-color: #fdf4ed;
         position: relative;
 
     }
@@ -647,9 +631,9 @@ footer .logo a:hover {
 
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 426px){
+@media only screen and (max-width: 1023px) and (min-width: 601px) {
 
-    .drop i{
+    .drop i {
 
         font-size: 2em;
 
@@ -845,13 +829,13 @@ footer .logo a:hover {
 
     /*FOOTER*/
 
-    .footer-bottom .data i{
+    .footer-bottom .data i {
 
         font-size: 1em;
 
     }
 
-    .footer-bottom .data a{
+    .footer-bottom .data a {
 
         font-size: 0.8em;
 
@@ -860,10 +844,11 @@ footer .logo a:hover {
     .footer-bottom .text li {
 
         font-size: 0.7em;
+        text-align: end;
 
     }
 
-    footer .icons{
+    footer .icons {
 
         display: flex;
         flex-direction: column;
@@ -871,13 +856,13 @@ footer .logo a:hover {
 
     }
 
-    .icons i{
+    .icons i {
 
         font-size: 0.8em;
 
     }
 
-    .nav-footer{
+    .nav-footer {
 
         display: flex;
         flex-direction: column;
@@ -891,379 +876,87 @@ footer .logo a:hover {
 
     }
 
-    .logo a{
+    .logo a {
 
         font-size: 0.9em;
 
     }
-    
+
     /*FOOTER*/
 
 
-    
+
     /*FOOTER FIN*/
 
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1440px){
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
 
-    body {
-
-        margin: 0%;
-        padding: 0%;
-        background-color: #fdf4ed;
-    
-    }
-    
-    nav {
-    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0% 2.5%;
-        padding-top: 1%;
-    
-    }
-    
-    /*NAV BAR*/
-    
-    #chk {
-    
-        display: none;
-    
-    }
-    
-    .down {
-    
-        display: none;
-    
-    }
-    
-    #down {
-    
-        display: none;
-    
-    }
-    
-    
-    .nav-bar {
-    
-        display: flex;
-        list-style: none;
-        font-size: 1.3em;
-    
-    }
-    
-    .nav-bar a {
-    
-        font-family: 'Poppins';
-        font-weight: 400;
-        text-decoration: none;
-        color: #FCD9DA;
-        transition: 0.2s;
-    
-    }
-    
-    .nav-bar li {
-    
-        margin-right: 25px;
-    
-    }
-    
-    .nav-bar a:hover {
-    
-        color: #EE2E31;
-    
-    }
-    
-    .nav-bar .login:hover {
-    
-        color: #fdf4ed;
-    
-    }
-    
-    .nav-bar .register:hover {
-    
-        color: #FCD9DA;
-        background-color: #EE2E31;
-    
-    }
-    
-    .nav-bar .cart:hover {
-    
-        color: #fdf4ed;
-        background-color: #f34548;
-        filter: drop-shadow(0px 5px 10px #EE2E31);
-    
-    }
-    
-    
-    .nav-bar li:last-of-type {
-    
-        margin-right: 0%;
-    
-    }
-    
-    .nav-bar-logo img {
-    
-        width: 60%;
-        height: auto;
-        margin-right: auto;
-        margin-top: 0.5%;
-    
-    }
-    
-    .nav-bar .signup {
-    
-        display: none;
-        font-weight: 500;
-        color: #EE2E31;
-    
-    
-    }
-    
-    .nav-bar .login {
-    
-        font-weight: 500;
-        color: #EE2E31;
-    
-    
-    }
-    
-    .nav-bar .register {
-    
-        font-weight: 500;
-        color: #EE2E31;
-        border-radius: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        background-color: #FCD9DA;
-        transition: 0.7s;
-    
-    }
-    
-    
-    .nav-bar .cart {
-    
-        margin-right: 0px;
-        color: #fdf4ed;
-        background-color: #EE2E31;
-        border-radius: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        transition: 0.7s;
-    
-    }
-    
-    .nav-bar .cart-div {
-    
-        position: relative;
-    
-    }
-    
-    .nav-bar .cart-circle {
-    
-        color: #080b12;
-        font-size: 0.6em;
-        font-weight: 700;
-        background-color: #fdf4ed;
-        border-radius: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        position: absolute;
-        right: -10px;
-        top: -15px;
-        transition: 0.5s;
-    }
-    
-    .nav-bar .cart-circle:hover {
-    
-        color: #fdf4ed;
-        background-color: #fdf4ed63;
-        filter: drop-shadow(0px 0px 5px #080b1271);
-    
-    }
-    
-    /*NAV BAR FIN*/
     
     /*FOOTER*/
-    
-    footer {
-    
-        width: 100%;
-        height: 30vh;
-        background-color: #06070C;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
+
+    .footer-bottom .data i {
+
+        font-size: 1em;
+
     }
-    
+
+    .footer-bottom .data a {
+
+        font-size: 0.8em;
+
+    }
+
+    .footer-bottom .text li {
+
+        font-size: 0.7em;
+        text-align: end;
+
+    }
+
     footer .icons {
-    
-        width: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 6%;
-    
-    }
-    
-    footer .icons a {
-    
-        font-size: 2em;
-        text-decoration: none;
-        color: #FCD9DA;
-        transition: ease-in;
-    
-    }
-    
-    
-    footer .icons i {
-    
-        transition: 0.4s;
-    
-    }
-    
-    
-    footer .icons i:hover {
-    
-        color: #EE2E31;
-        transform: scale(1.5, 1.5);
-    
-    }
-    
-    footer .footer-bottom {
-    
-        width: 100%;
-        height: 5vh;
-        position: absolute;
-        bottom: 0px;
-    
-        display: flex;
-        justify-content: flex-end;
-    
-        color: #FCD9DA;
-        border-top: 2px solid #fcd9da41;
-    
-    }
-    
-    footer .data {
-    
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding-left: 4%;
-    
-    }
-    
-    footer .data i {
-    
-        margin-left: 1.5%;
-        font-size: 1.5em;
-    
-    }
-    
-    footer .data a {
-    
-        margin-left: 1.5%;
-        text-decoration: none;
-        color: #FCD9DA;
-    
-    
-    }
-    
-    footer .data a:hover,
-    .data i:hover {
-    
-        color: #fcd9dab9;
-    
-    }
-    
-    footer .text {
-    
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 5%;
-        align-items: center;
-        font-size: 0.9em;
-        list-style: none;
-    
-    }
-    
-    footer span {
-    
-        font-weight: 800;
-    
-    }
-    
-    footer .nav-footer {
-    
-        width: 25%;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.2em;
-    
-    }
-    
-    footer .nav-footer a {
-        color: #FCD9DA;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-    
-    footer .nav-footer a:hover {
-    
-        color: #EE2E31;
-    
-    }
-    
-    
-    footer .logo {
-    
+
         display: flex;
         flex-direction: column;
-        align-items: left;
-        margin-left: 5%;
-        margin-bottom: 2%;
-    
+        margin: 0px;
+
     }
-    
-    footer .logo img {
-    
-        margin-bottom: 10%;
-    
+
+    .icons i {
+
+        font-size: 0.8em;
+
     }
-    
-    footer .logo p,
-    a {
-    
-        color: #FCD9DA;
-        text-decoration: none;
-    
+
+    .nav-footer {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
-    
-    footer .logo a:hover {
-    
-        color: #dab4b5;
-    
+
+    .logo img {
+
+        width: 70%;
+
     }
-    
+
+    .logo a {
+
+        font-size: 0.9em;
+
+    }
+
+    /*FOOTER*/
+
+
+
     /*FOOTER FIN*/
 
 }
 
- @media only screen and (max-width: 2560px) and (min-width: 2000px) { 
+@media only screen and (max-width: 2560px) and (min-width: 2000px) {
 
     .nav-bar-logo img {
 
@@ -1310,19 +1003,19 @@ footer .logo a:hover {
 
     }
 
-    footer a{
+    footer a {
 
         font-size: 1.5em;
 
     }
 
-    .icons i{
+    .icons i {
 
         font-size: 2em;
 
     }
 
-    .text li{
+    .text li {
 
         font-size: 1.6em;
 

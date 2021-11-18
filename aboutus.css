@@ -94,5 +94,126 @@ nav .nav-bar a{
 
 }
 
-
 /*NAV FIN*/
+
+@media only screen and (max-width: 600px) and (min-width: 0px){
+
+    .drop label i{
+
+        color: #06070C;
+
+    }
+
+    .about-us-div {
+
+        width: 100%;
+
+    }
+
+    .about-us-div .text-div img{
+
+        width: 100%;
+
+    }
+
+    .about-us-div .text-div h1{
+
+        font-size: 1.5em
+
+    }
+
+    .about-us-div .text-div p{
+
+        font-size: 0.9em;
+
+    }
+
+    .about-us-div .img-div{
+
+        margin-bottom: 10%;
+
+    }
+
+    .about-us-div .img-div img{
+
+        width: 70vw;
+
+    }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 601px){
+
+    .drop label i{
+
+        color: #06070C;
+
+    }
+
+    .about-us-div {
+
+        width: 100%;
+
+    }
+
+    .about-us-div .text-div img{
+
+        width: 100%;
+
+    }
+
+    .about-us-div .text-div h1{
+
+        font-size: 2em
+
+    }
+
+    .about-us-div .text-div p{
+
+        font-size: 1em;
+
+    }
+
+    .about-us-div .img-div{
+
+        margin-bottom: 10%;
+        margin-top: 10%;
+
+    }
+
+    .about-us-div .img-div img{
+
+        width: 70vw;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+
+
+    .about-us-div .img-div img{
+
+        width: 70vw;
+
+    }
+
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 2000px){
+
+    .about-us-div .text-div h1{
+
+        font-size: 3em;
+
+    }
+
+    .about-us-div .text-div p{
+
+        font-size: 1.5em;
+
+    }
+
+
+}

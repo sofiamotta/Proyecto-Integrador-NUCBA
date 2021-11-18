@@ -109,7 +109,7 @@ body{
 
 .fr-container .btn-submit{
 
-    width: 10%;
+    width: 15%;
     font-weight: 700;
     font-size: 1.3em;
     border-radius: 20px;
@@ -172,3 +172,232 @@ body{
 
 
 /*SIGNUP FORM FIN*/
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) and (min-width: 0px){
+
+    body{
+
+        text-align: center;
+    }
+    
+    /*SIGNUP FORM*/
+    
+    .sign-header{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    
+    }
+    
+    .sign-header img{
+    
+        width: 70vw;
+    
+    }
+    
+    .sign-header h1{
+    
+        font-size: 2em;
+
+    }
+    
+    .sign-header p{
+    
+        font-size: 1.3em;
+        color: #FCD9DA;
+    
+    }
+
+    
+    .fr-container .input{
+    
+        width: 75vw;
+
+    }
+    
+    .fr-container .btn-submit{
+    
+        width: 60vw;
+        font-size: 1em;
+    
+    }
+
+    
+    .f-account{
+    
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 601px){
+
+    body{
+
+        text-align: center;
+    }
+    
+    /*SIGNUP FORM*/
+    
+    .sign-header{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    
+    }
+    
+    .sign-header img{
+    
+        width: 30vw;
+    
+    }
+    
+    .sign-header h1{
+    
+        font-size: 2em;
+
+    }
+    
+    .sign-header p{
+    
+        font-size: 1.3em;
+        color: #FCD9DA;
+    
+    }
+
+    
+    .fr-container .input{
+    
+        width: 50vw;
+
+    }
+    
+    .fr-container .btn-submit{
+    
+        width: 30vw;
+        font-size: 1.2em;
+    
+    }
+
+    
+    .f-account{
+    
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+        font-size: 1.3em;
+    
+    }
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+
+    body{
+
+        text-align: center;
+    }
+    
+    /*SIGNUP FORM*/
+    
+    .sign-header{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    
+    }
+    
+    .sign-header img{
+    
+        width: 20vw;
+    
+    }
+    
+    .sign-header h1{
+    
+        font-size: 2em;
+
+    }
+    
+    .sign-header p{
+    
+        font-size: 1.3em;
+        color: #FCD9DA;
+    
+    }
+
+    
+    .fr-container .input{
+    
+        width: 50vw;
+
+    }
+    
+    .fr-container .btn-submit{
+    
+        width: 20vw;
+        font-size: 1.2em;
+    
+    }
+
+    
+    .f-account{
+    
+        width: 100%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        font-size: 1.3em;
+    
+    }
+
+}
+@media only screen and (max-width: 2560px) and (min-width: 2000px){
+
+    .sign-header h1{
+    
+        font-size: 2.5em;
+
+    }
+    
+    .sign-header p{
+    
+        font-size: 1.7em;
+        color: #FCD9DA;
+    
+    }
+
+    .fr-container .input{
+    
+        font-size: 1.3em;
+
+    }
+
+    .f-account{
+    
+        font-size: 1.6em;
+    
+    }
+
+    .fr-container .btn-submit{
+    
+        font-size: 1.5em;
+        margin-top: 2.5%;
+    
+    }
+
+
+}
