@@ -27,19 +27,19 @@ nav {
 
 /*NAV BAR*/
 
-#chk{
+#chk {
 
     display: none;
 
 }
 
-.down{
+.down {
 
     display: none;
 
 }
 
-#down{
+#down {
 
     display: none;
 
@@ -113,7 +113,7 @@ nav {
 
 }
 
-.nav-bar .signup{
+.nav-bar .signup {
 
     display: none;
     font-weight: 500;
@@ -363,7 +363,7 @@ footer .logo a:hover {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 425px) and (min-width: 0px) {
 
     body {
 
@@ -375,7 +375,7 @@ footer .logo a:hover {
 
     }
 
-   nav{
+    nav {
 
         width: 0;
         height: 0;
@@ -384,19 +384,19 @@ footer .logo a:hover {
 
     }
 
-    nav .nav-bar{
+    nav .nav-bar {
 
         display: none;
 
     }
 
-    nav .nav-bar-logo{
+    nav .nav-bar-logo {
 
         display: none;
 
     }
 
-    header{
+    header {
 
         display: flex;
         flex-direction: column;
@@ -405,39 +405,39 @@ footer .logo a:hover {
 
     }
 
-    header .drop label{
+    header .drop label {
 
-        width: 320px;
+        width: 100%;
         display: block;
         text-align: center;
 
     }
 
-    header label i{
+    header label i {
 
         color: #FCD9DA;
 
     }
 
-    header #chk{
+    header #chk {
 
         display: none;
 
     }
 
-    header .drop{
+    header .drop {
 
         display: flex;
-    
+
     }
 
-    header #chk:checked ~ nav {
-        
+    header #chk:checked~nav {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         position: fixed;
         top: 0;
         z-index: 10;
@@ -445,11 +445,11 @@ footer .logo a:hover {
         height: 100vh;
         opacity: 100;
 
-        background-color:#FCD9DA;
+        background-color: #FCD9DA;
 
     }
 
-    header #chk:checked ~ nav .down{
+    header #chk:checked~nav .down {
 
         display: flex;
         justify-content: right;
@@ -462,21 +462,21 @@ footer .logo a:hover {
 
     }
 
-    header #chk:checked ~ nav .down label i{ 
+    header #chk:checked~nav .down label i {
 
         margin-right: 20px;
 
     }
 
-    header #chk:checked ~ .drop{
-        
+    header #chk:checked~.drop {
+
         display: none;
 
     }
 
-    header #chk:checked ~ nav .nav-bar{
+    header #chk:checked~nav .nav-bar {
 
-        width: 320px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -484,13 +484,13 @@ footer .logo a:hover {
 
     }
 
-    header #chk:checked ~ nav .nav-bar-logo{
+    header #chk:checked~nav .nav-bar-logo {
 
         display: none;
 
     }
 
-    header #chk:checked ~ .down{
+    header #chk:checked~.down {
 
         display: flex;
         justify-content: right;
@@ -499,65 +499,62 @@ footer .logo a:hover {
 
     }
 
-    header #chk:checked ~ nav .nav-bar li{
+    header #chk:checked~nav .nav-bar li {
 
         margin: 0px;
         margin-bottom: 10px;
 
     }
 
-    header #chk:checked ~ nav .nav-bar a{
+    header #chk:checked~nav .nav-bar a {
 
         color: #06070C;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .login{
+    header #chk:checked~nav .nav-bar .login {
 
         color: #EE2E31;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .signup{
+    header #chk:checked~nav .nav-bar .signup {
 
         display: flex;
         color: #EE2E31;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .register{
+    header #chk:checked~nav .nav-bar .register {
 
         display: none;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .cart-div{
+    header #chk:checked~nav .nav-bar .cart-div {
 
         display: flex;
         margin: 0px;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .cart-div .cart-circle{
+    header #chk:checked~nav .nav-bar .cart-div .cart-circle {
 
         display: none;
 
     }
 
-    header #chk:checked ~ nav .nav-bar .cart-div .cart i{
+    header #chk:checked~nav .nav-bar .cart-div .cart i {
 
         color: #FCD9DA;
 
     }
 
-    
-
-
-
     /*NAV BAR FIN*/
 
     footer {
 
+        width: 100%;
         height: 320px;
         flex-direction: column;
         justify-content: center;
@@ -645,6 +642,689 @@ footer .logo a:hover {
     .logo a {
 
         display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 426px){
+
+    .drop i{
+
+        font-size: 2em;
+
+    }
+
+    body {
+
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-color: #fdf4ed;
+        position: relative;
+
+    }
+
+    nav {
+
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: 0.4s;
+
+    }
+
+    nav .nav-bar {
+
+        display: none;
+
+    }
+
+    nav .nav-bar-logo {
+
+        display: none;
+
+    }
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .drop label {
+
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+
+    header label i {
+
+        color: #FCD9DA;
+
+    }
+
+    header #chk {
+
+        display: none;
+
+    }
+
+    header .drop {
+
+        display: flex;
+
+    }
+
+    header #chk:checked~nav {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        opacity: 100;
+
+        background-color: #FCD9DA;
+
+    }
+
+    header #chk:checked~nav .down {
+
+        display: flex;
+        justify-content: right;
+        position: absolute;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        width: 100%;
+        background-color: #EE2E31;
+
+    }
+
+    header #chk:checked~nav .down label i {
+
+        margin-right: 20px;
+
+    }
+
+    header #chk:checked~.drop {
+
+        display: none;
+
+    }
+
+    header #chk:checked~nav .nav-bar {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header #chk:checked~nav .nav-bar-logo {
+
+        display: none;
+
+    }
+
+    header #chk:checked~.down {
+
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        z-index: 30;
+
+    }
+
+    header #chk:checked~nav .nav-bar li {
+
+        margin: 0px;
+        margin-bottom: 10px;
+
+    }
+
+    header #chk:checked~nav .nav-bar a {
+
+        color: #06070C;
+
+    }
+
+    header #chk:checked~nav .nav-bar .login {
+
+        color: #EE2E31;
+
+    }
+
+    header #chk:checked~nav .nav-bar .signup {
+
+        display: flex;
+        color: #EE2E31;
+
+    }
+
+    header #chk:checked~nav .nav-bar .register {
+
+        display: none;
+
+    }
+
+    header #chk:checked~nav .nav-bar .cart-div {
+
+        display: flex;
+        margin: 0px;
+
+    }
+
+    header #chk:checked~nav .nav-bar .cart-div .cart-circle {
+
+        display: none;
+
+    }
+
+    header #chk:checked~nav .nav-bar .cart-div .cart i {
+
+        color: #FCD9DA;
+
+    }
+
+    /*NAV BAR FIN*/
+
+
+    /*FOOTER*/
+
+    .footer-bottom .data i{
+
+        font-size: 1em;
+
+    }
+
+    .footer-bottom .data a{
+
+        font-size: 0.8em;
+
+    }
+
+    .footer-bottom .text li {
+
+        font-size: 0.7em;
+
+    }
+
+    footer .icons{
+
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+
+    }
+
+    .icons i{
+
+        font-size: 0.8em;
+
+    }
+
+    .nav-footer{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .logo img {
+
+        width: 70%;
+
+    }
+
+    .logo a{
+
+        font-size: 0.9em;
+
+    }
+    
+    /*FOOTER*/
+
+
+    
+    /*FOOTER FIN*/
+
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1440px){
+
+    body {
+
+        margin: 0%;
+        padding: 0%;
+        background-color: #fdf4ed;
+    
+    }
+    
+    nav {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0% 2.5%;
+        padding-top: 1%;
+    
+    }
+    
+    /*NAV BAR*/
+    
+    #chk {
+    
+        display: none;
+    
+    }
+    
+    .down {
+    
+        display: none;
+    
+    }
+    
+    #down {
+    
+        display: none;
+    
+    }
+    
+    
+    .nav-bar {
+    
+        display: flex;
+        list-style: none;
+        font-size: 1.3em;
+    
+    }
+    
+    .nav-bar a {
+    
+        font-family: 'Poppins';
+        font-weight: 400;
+        text-decoration: none;
+        color: #FCD9DA;
+        transition: 0.2s;
+    
+    }
+    
+    .nav-bar li {
+    
+        margin-right: 25px;
+    
+    }
+    
+    .nav-bar a:hover {
+    
+        color: #EE2E31;
+    
+    }
+    
+    .nav-bar .login:hover {
+    
+        color: #fdf4ed;
+    
+    }
+    
+    .nav-bar .register:hover {
+    
+        color: #FCD9DA;
+        background-color: #EE2E31;
+    
+    }
+    
+    .nav-bar .cart:hover {
+    
+        color: #fdf4ed;
+        background-color: #f34548;
+        filter: drop-shadow(0px 5px 10px #EE2E31);
+    
+    }
+    
+    
+    .nav-bar li:last-of-type {
+    
+        margin-right: 0%;
+    
+    }
+    
+    .nav-bar-logo img {
+    
+        width: 60%;
+        height: auto;
+        margin-right: auto;
+        margin-top: 0.5%;
+    
+    }
+    
+    .nav-bar .signup {
+    
+        display: none;
+        font-weight: 500;
+        color: #EE2E31;
+    
+    
+    }
+    
+    .nav-bar .login {
+    
+        font-weight: 500;
+        color: #EE2E31;
+    
+    
+    }
+    
+    .nav-bar .register {
+    
+        font-weight: 500;
+        color: #EE2E31;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #FCD9DA;
+        transition: 0.7s;
+    
+    }
+    
+    
+    .nav-bar .cart {
+    
+        margin-right: 0px;
+        color: #fdf4ed;
+        background-color: #EE2E31;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        transition: 0.7s;
+    
+    }
+    
+    .nav-bar .cart-div {
+    
+        position: relative;
+    
+    }
+    
+    .nav-bar .cart-circle {
+    
+        color: #080b12;
+        font-size: 0.6em;
+        font-weight: 700;
+        background-color: #fdf4ed;
+        border-radius: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        position: absolute;
+        right: -10px;
+        top: -15px;
+        transition: 0.5s;
+    }
+    
+    .nav-bar .cart-circle:hover {
+    
+        color: #fdf4ed;
+        background-color: #fdf4ed63;
+        filter: drop-shadow(0px 0px 5px #080b1271);
+    
+    }
+    
+    /*NAV BAR FIN*/
+    
+    /*FOOTER*/
+    
+    footer {
+    
+        width: 100%;
+        height: 30vh;
+        background-color: #06070C;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    footer .icons {
+    
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 6%;
+    
+    }
+    
+    footer .icons a {
+    
+        font-size: 2em;
+        text-decoration: none;
+        color: #FCD9DA;
+        transition: ease-in;
+    
+    }
+    
+    
+    footer .icons i {
+    
+        transition: 0.4s;
+    
+    }
+    
+    
+    footer .icons i:hover {
+    
+        color: #EE2E31;
+        transform: scale(1.5, 1.5);
+    
+    }
+    
+    footer .footer-bottom {
+    
+        width: 100%;
+        height: 5vh;
+        position: absolute;
+        bottom: 0px;
+    
+        display: flex;
+        justify-content: flex-end;
+    
+        color: #FCD9DA;
+        border-top: 2px solid #fcd9da41;
+    
+    }
+    
+    footer .data {
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 4%;
+    
+    }
+    
+    footer .data i {
+    
+        margin-left: 1.5%;
+        font-size: 1.5em;
+    
+    }
+    
+    footer .data a {
+    
+        margin-left: 1.5%;
+        text-decoration: none;
+        color: #FCD9DA;
+    
+    
+    }
+    
+    footer .data a:hover,
+    .data i:hover {
+    
+        color: #fcd9dab9;
+    
+    }
+    
+    footer .text {
+    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 5%;
+        align-items: center;
+        font-size: 0.9em;
+        list-style: none;
+    
+    }
+    
+    footer span {
+    
+        font-weight: 800;
+    
+    }
+    
+    footer .nav-footer {
+    
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+    
+    }
+    
+    footer .nav-footer a {
+        color: #FCD9DA;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    footer .nav-footer a:hover {
+    
+        color: #EE2E31;
+    
+    }
+    
+    
+    footer .logo {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    
+    }
+    
+    footer .logo img {
+    
+        margin-bottom: 10%;
+    
+    }
+    
+    footer .logo p,
+    a {
+    
+        color: #FCD9DA;
+        text-decoration: none;
+    
+    }
+    
+    footer .logo a:hover {
+    
+        color: #dab4b5;
+    
+    }
+    
+    /*FOOTER FIN*/
+
+}
+
+ @media only screen and (max-width: 2560px) and (min-width: 2000px) { 
+
+    .nav-bar-logo img {
+
+        width: 100%;
+
+    }
+
+    .nav-bar li {
+
+        margin-right: 25px;
+
+    }
+
+    .nav-bar a {
+
+        font-size: 1.8em;
+
+
+    }
+
+    .nav-bar .register {
+
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+
+    .nav-bar .cart {
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+
+    .nav-bar .cart-circle {
+
+        font-size: 0.9em;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+    footer a{
+
+        font-size: 1.5em;
+
+    }
+
+    .icons i{
+
+        font-size: 2em;
+
+    }
+
+    .text li{
+
+        font-size: 1.6em;
 
     }
 
